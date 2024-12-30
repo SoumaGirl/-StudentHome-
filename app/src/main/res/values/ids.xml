@@ -1,0 +1,97 @@
+<resources>
+    <item name="confirmPasswordEditText" type="id" />
+    <item name="emailEditText" type="id" />
+    <item name="passwordEditText" type="id" />
+    <item name="signInButton" type="id" />
+    <item name="username" type="id" />
+    <item name="roleSpinner" type="id" />
+    <item name="backgroundImage" type="id" />
+    <item name="welcomeText" type="id" />
+    <item name="password" type="id" />
+    <item name="loginButton" type="id" />
+    <item name="Get_Started_text" type="id" />
+    <item name="textViewMessage" type="id"/>
+    <item name="userInfoLayout" type="id"/>
+    <item name="userImage" type="id"/>
+    <item name="userName" type="id"/>
+    <item name="onlineStatusText" type="id"/>
+    <item name="callIcon" type="id"/>
+    <item name="moreOptionsIcon" type="id"/>
+
+    <!-- Message Input and Send Button -->
+    <item name="messageInputLayout" type="id"/>
+    <item name="editTextMessage" type="id"/>
+    <item name="sendButton" type="id"/>
+
+    <!-- ScrollView for Messages -->
+    <item name="scrollViewMessages" type="id"/>
+    <item name="messageContainer" type="id"/>
+    <item name="circularImage" type="id"/>
+    <item name="tagline" type="id"/>
+    <item name="appName" type="id"/>
+    <item name="signUpButton" type="id"/>
+    <item name="mprofileIcon" type="id"/>
+    <item name="favoriteIcon" type="id"/>
+    <item name="homeIcon" type="id"/>
+    <item name="mofferPrice2" type="id"/>
+    <item name="offerImage2" type="id"/>
+    <item name="offerPrice1" type="id"/>
+    <item name="offerTitle2" type="id"/>
+    <item name="offerImage1" type="id"/>
+    <item name="offerTitle1" type="id"/>
+    <item name="addOfferButton" type="id"/>
+    <item name="myOffersButton" type="id"/>
+    <item name="backButton" type="id"/>
+    <item name="bookNowButton" type="id"/>
+    <item name="propertyPrice" type="id"/>
+    <item name="messageIcon" type="id"/>
+    <item name="ownerLabel" type="id"/>
+    <item name="ownerName" type="id"/>
+    <item name="ownerImage" type="id"/>
+    <item name="propertyLocation" type="id"/>
+    <item name="propertyTitle" type="id"/>
+    <item name="propertyImage" type="id"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <item name="email_field" type="id"/>
+        <item name="phone_field" type="id"/>
+        <item name="dob_field" type="id"/>
+        <item name="sex" type="id"/>
+        <item name="male_button" type="id"/>
+        <item name="female_button" type="id"/>
+        <item name="header" type="id"/>
+        <item name="back_button" type="id"/>
+        <item name="profile_picture" type="id"/>
+        <item name="profile_name" type="id"/>
+        <item name="profile_role" type="id"/>
+        <item name="logout_button" type="id"/>
+        <item name="edit_button" type="id"/>
+        <item name="email_picture" type="id"/>
+        <item name="phone_picture" type="id"/>
+        <item name="calander_picture" type="id"/>
+
+
+
+
+
+
+
+
+
+
+
+</resources>

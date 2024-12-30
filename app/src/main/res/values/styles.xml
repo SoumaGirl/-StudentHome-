@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Style for EditText -->
+    <style name="EditTextStyle">
+        <item name="android:background">@drawable/edittext_background</item>
+        <item name="android:textColor">@color/edit_text_text</item>
+        <item name="android:textColorHint">@color/edit_text_hint</item>
+        <item name="android:textColorHighlight">@color/primaryColor</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Style for Button -->
+    <style name="ButtonStyle">
+        <item name="android:backgroundTint">@color/buttonColor</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

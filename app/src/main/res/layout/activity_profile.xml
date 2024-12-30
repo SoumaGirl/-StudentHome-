@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F5">
+
+    <!-- Header Section -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#A00000">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_margin="16dp"
+            android:contentDescription="Back button"
+            android:src="@drawable/img_7"
+            tools:ignore="HardcodedText,ImageContrastCheck,RedundantDescriptionCheck" />
+
+        <!-- Profile Picture -->
+        <ImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/img_6"
+            android:contentDescription="Profile picture"
+            tools:ignore="HardcodedText" />
+
+        <!-- Name and Role -->
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_picture"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/name"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/profile_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:text="@string/statut"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <!-- Content Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <!-- Email Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Email icon"
+                android:src="@drawable/img_8"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/email_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edittext_background"
+                android:textColor="#FF000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <!-- Phone Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Phone icon"
+                android:src="@drawable/img_9"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/phone_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone_hint"
+                android:inputType="phone"
+                android:textColor="#FF000000"
+                android:background="@drawable/edittext_background"
+                android:textSize="14sp"
+                tools:ignore="Autofill,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <!-- Date of Birth Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Calendar icon"
+                android:src="@drawable/img_10"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/dob_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/dob_hint"
+                android:inputType="date"
+                android:textColor="#FF000000"
+                android:background="@drawable/edittext_background"
+                android:textSize="14sp"
+                tools:ignore="Autofill,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <!-- Gender Field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/sex"
+            android:textColor="#A00000"
+            android:textSize="16sp" />
+
+        <!-- Gender RadioGroup -->
+        <RadioGroup
+            android:id="@+id/gender_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male_radiobutton"
+                android:textColor="#FF000000"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/female_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female_radiobutton"
+                android:textColor="#FF000000"
+                android:textSize="14sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#A00000"
+            android:text="@string/edit_button"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#A00000"
+            android:text="@string/logout_button"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+</RelativeLayout>

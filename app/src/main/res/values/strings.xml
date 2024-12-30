@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="username_hint" translatable="false">Username</string>
+    <string name="login_button_text" translatable="false">Login</string>
+    <string name="welcome_text" translatable="false">Welcome</string>
+    <string name="Get_Started_text" translatable="false">Get Started</string>
+    <string name="fill_fields" translatable="false">Veuillez remplir tous les champs.</string>
+    <string name="login_successful" translatable="false">Connexion réussie !</string>
+    <string name="invalid_credentials" translatable="false">Identifiants invalides : &#60;str&#62;</string>
+
+    <string name="header_image_desc" translatable="false">App Logo</string>
+    <string name="app_name" translatable="false">StudentHome</string>
+    <string name="email_hint" translatable="false">Email</string>
+    <string name="password_hint" translatable="false">Mot de passe</string>
+    <string name="confirm_password_hint" translatable="false">Confirmer le mot de passe</string>
+    <string name="sign_in" translatable="false">Se connecter</string>
+    <string name="role_user" translatable="false">Utilisateur</string>
+    <string name="role_admin" translatable="false">Admin</string>
+
+
+    <string name="message_input_desc">Message input field</string>
+    <string name="send_button_desc">Send message button</string>
+    <string name="message_hint">Ecrire ton message</string>
+    <string name="user_image">User Image</string>
+    <string name="online_status">Online Status</string>
+    <string name="call_icon">Call Icon</string>
+    <string name="more_options">More Options</string>
+    <string name="en_ligne">En ligne</string>
+    <string name="ahmed_chawi">Ahmed Chawi</string>
+    <string name="more_options1">More Options</string>
+    <string name="online_status1">Online Status</string>
+    <string name="call_icon1">Call Icon</string>
+    <string name="en_ligne1">En ligne</string>
+    <string name="ahmed_chawi1">Ahmed Chawi</string>
+
+    <string-array name="role_options">
+        <item>Owner</item>
+        <item>Rental</item>
+    </string-array>
+
+
+    <string name="hint_search">Search</string>
+    <string name="filter_all">All</string>
+    <string name="filter_apartment">Apartment </string>
+    <string name="filter_room">Room</string>
+    <string name="offer_title">Apartment quip</string>
+    <string name="offer_price">1000 DH/M</string>
+    <string name="_1000_dh_m">1000 DH/M</string>
+    <string name="apartment_quip">Apartment quip</string>
+    <string name="Room_quip">Room quip</string>
+    <string name="_500_dh_m">500 DH/M </string>
+    <string name="Appartement_équipé">Appartement équipé </string>
+    <string name="Taroudant_Maroc">Taroudant,Maroc </string>
+    <string name="BOOK_NOW">BOOK NOW </string>
+    <string name="profile">Profile</string>
+    <string name="user">User</string>
+    <string name="appartement_equipe">appartement equipe</string>
+    <string name="_1000dh_m">1000DH/M</string>
+    <string name="_500dh_m">500DH/M</string>
+    <string name="owner">owner</string>
+    <string name="chambre_equipe">chambre equipe</string>
+    <string name="ahmed_chawi2">ahmed chawi</string>
+    <string name="back">Back</string>
+    <string name="add_offer">add offer</string>
+    <string name="chat">Chat</string>
+    <string name="home">Home</string>
+    <string name="favorite">Favorite</string>
+    <string name="my_offers">my offers</string>
+    <string name="_1000dh_mois">1000DH/Mois</string>
+    <string name="taroudant_maroc">Taroudant, Maroc</string>
+    <string name="appartement_quip">Appartement équipé</string>
+    <string name="propri_taire">Propriétaire</string>
+
+
+
+
+
+
+    <string name="name">Omar EL ALAMI</string>
+    <string name="statut">Student</string>
+
+    <string name="phone_hint">Phone</string>
+    <string name="dob_hint">Date of Birth</string>
+    <string name="male_radiobutton">Male</string>
+    <string name="female_radiobutton">Female</string>
+    <string name="edit_button">Edit</string>
+    <string name="logout_button">Log Out</string>
+    <string name="student">Student</string>
+    <string name="sex">Sex</string>
+
+
+</resources>

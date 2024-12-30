@@ -1,0 +1,149 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/border"
+    android:padding="10dp">
+
+    <!-- User Info at the Top with Gray Background -->
+    <LinearLayout
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/edittext_background1"
+        android:textColorHint="#546E7A" >
+
+        <!-- Left Section: User Image and Name -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- User Image -->
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img_1"
+                android:contentDescription="User Image"
+                tools:ignore="HardcodedText" />
+
+            <!-- User Name and Status -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:gravity="start|center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ahmed Chawi"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <!-- Online Status -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/green_dot"
+                        android:contentDescription="Online Status" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="En ligne"
+                        android:textSize="14sp"
+                        android:textColor="#388E3C" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Right Section: Call and Menu Icons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="70dp"
+                android:src="@drawable/ic_call"
+                android:contentDescription="Call Icon" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/more_vert"
+                android:layout_marginStart="-20dp"
+                android:contentDescription="More Options" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Message Input and Send Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_input"
+            android:hint="@string/message_hint"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="#546E7A" />
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="8dp"
+            android:background="@null"
+            android:src="@drawable/ic_send"
+            android:contentDescription="@string/send_button_desc" />
+    </LinearLayout>
+
+    <!-- ScrollView for Messages -->
+    <ScrollView
+        android:id="@+id/scrollViewMessages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/messageContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Messages will appear here -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

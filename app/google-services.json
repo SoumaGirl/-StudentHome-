@@ -1,0 +1,30 @@
+{
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576643403532:android:f324ab4cf753ee9025c329",
+        "android_client_info": {
+          "package_name": "com.example.promobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLWvcOZOQQiKqC5HMlBVS83cGRCtUTw2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1",
+  "project_info": {
+    "project_number": "576643403532",
+    "firebase_url": "https://studentho-6b3ee-default-rtdb.firebaseio.com",
+    "project_id": "studentho-6b3ee",
+    "storage_bucket": "studentho-6b3ee.firebasestorage.app"
+  }
+}

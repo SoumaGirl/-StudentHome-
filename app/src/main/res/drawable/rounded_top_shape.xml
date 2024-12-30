@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- Couleur de fond blanche -->
+    <corners
+        android:topLeftRadius="24dp"
+        android:topRightRadius="24dp"
+        android:bottomLeftRadius="0dp"
+        android:bottomRightRadius="0dp" /> <!-- Coins arrondis en haut -->
+    <stroke
+        android:width="2dp"
+        android:color="#D32F2F" /> <!-- Bordure rouge -->
+</shape>
