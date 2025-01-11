@@ -95,8 +95,7 @@ public class SignUpActivity extends AppCompatActivity {
 
     private void saveUserRole(FirebaseUser user) {
         String email = user.getEmail();
-        // For the sake of this example, let's assume the role is set to "renter" by default.
-        String role = "renter"; // You can modify this based on your needs (e.g., based on a spinner selection).
+        String role = "renter"; // Default role, modify as necessary.
 
         if (email != null) {
             User newUser = new User(email, role);
@@ -140,10 +139,10 @@ public class SignUpActivity extends AppCompatActivity {
     private void navigateToNextActivity(FirebaseUser user, String role) {
 
         Intent intent;
-        if ("owner".equals(role)) {
+        if ("Owner".equals(role)) {
             intent = new Intent(SignUpActivity.this, OwnerOfferActivity.class);
         } else {
-            intent = new Intent(SignUpActivity.this, OfferDetailActivity .class);
+            intent = new Intent(SignUpActivity.this, HomePage.class);
         }
         startActivity(intent);
         finish();

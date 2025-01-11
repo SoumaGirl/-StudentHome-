@@ -1,28 +1,21 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    tools:context=".OwnerOfferActivity">
+    android:orientation="vertical"
+    android:background="#FFFFFF">
 
     <!-- Header -->
     <LinearLayout
-        android:layout_width="370dp"
+        android:layout_width="match_parent"
         android:layout_height="90dp"
         android:orientation="horizontal"
         android:padding="16dp"
-        android:layout_marginStart="20dp"
         android:background="#8B0000">
-
-        <!-- User Image -->
-
-
         <!-- User Information -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
             <TextView
                 android:id="@+id/userName"
                 android:layout_width="wrap_content"
@@ -30,7 +23,6 @@
                 android:text="@string/ahmed_chawi2"
                 android:textSize="18sp"
                 android:textColor="#FFFFFF" />
-
             <TextView
                 android:id="@+id/userRole"
                 android:layout_width="wrap_content"
@@ -39,6 +31,7 @@
                 android:textSize="14sp"
                 android:textColor="#FFD700" />
         </LinearLayout>
+
         <ImageView
             android:id="@+id/backButton"
             android:layout_width="50dp"
@@ -54,132 +47,105 @@
             android:layout_height="65dp"
             android:src="@drawable/img_1"
             android:layout_marginStart="7dp"
-
             android:background="@drawable/circle_bg"
             android:contentDescription="@string/user" />
-
-        <!-- Back Button -->
-
     </LinearLayout>
 
     <!-- Buttons -->
     <LinearLayout
-        style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@id/userImage"
-        android:padding="16dp"
-        android:gravity="center_horizontal"
-        tools:ignore="NotSibling">
-
+        android:gravity="center"
+        android:padding="16dp">
         <Button
             android:id="@+id/myOffersButton"
-            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/my_offers"
             android:backgroundTint="#D32F2F"
-            android:layout_marginTop="80dp"
             android:textColor="#FFFFFF" />
-
         <Button
             android:id="@+id/addOfferButton"
-            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/add_offer"
             android:backgroundTint="#D32F2F"
-            android:layout_marginTop="80dp"
             android:textColor="#FFFFFF" />
     </LinearLayout>
 
-    <!-- Offers Section -->
+    <!-- Scrollable Content -->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/myOffersButton"
-        tools:ignore="NotSibling">
-
+        android:layout_height="0dp"
+        android:layout_weight="1">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp">
-
             <!-- Offer 1 -->
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_bg"
-                android:layout_marginTop="130dp"
-                android:importantForAccessibility="no"
-                android:padding="16dp">
-
+                android:padding="16dp"
+                android:layout_marginTop="10dp">
                 <ImageView
                     android:id="@+id/offerImage1"
                     android:layout_width="match_parent"
                     android:layout_height="190dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/img3" />
-
                 <TextView
                     android:id="@+id/offerTitle1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/offerImage1"
                     android:text="@string/appartement_equipe"
                     android:textColor="#000000"
                     android:textSize="16sp"
+                    android:layout_below="@id/offerImage1"
                     android:layout_marginTop="8dp" />
-
                 <TextView
                     android:id="@+id/offerPrice1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_below="@id/offerImage1"
                     android:text="@string/_1000dh_m"
                     android:textColor="#D32F2F"
                     android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
                     android:layout_marginTop="8dp" />
             </RelativeLayout>
-
             <!-- Offer 2 -->
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_bg"
-                android:layout_marginTop="10dp"
-                android:importantForAccessibility="no"
-                android:padding="16dp">
-
+                android:padding="16dp"
+                android:layout_marginTop="10dp">
                 <ImageView
                     android:id="@+id/offerImage2"
                     android:layout_width="match_parent"
                     android:layout_height="190dp"
                     android:src="@drawable/img3"
                     android:scaleType="centerCrop" />
-
                 <TextView
                     android:id="@+id/offerTitle2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/offerImage2"
                     android:text="@string/chambre_equipe"
                     android:textColor="#000000"
                     android:textSize="16sp"
+                    android:layout_below="@id/offerImage2"
                     android:layout_marginTop="8dp" />
-
                 <TextView
                     android:id="@+id/offerPrice2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_below="@id/offerImage2"
                     android:text="@string/_500dh_m"
                     android:textColor="#D32F2F"
                     android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
                     android:layout_marginTop="8dp" />
             </RelativeLayout>
         </LinearLayout>
@@ -189,40 +155,35 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:layout_alignParentBottom="true"
-        android:background="#8B0000"
         android:orientation="horizontal"
+        android:background="#8B0000"
         android:gravity="center">
-
         <ImageView
             android:id="@+id/homeIcon"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:src="@drawable/ic_home"
             android:contentDescription="@string/home" />
-
         <ImageView
             android:id="@+id/chatIcon"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:src="@drawable/ic_message"
-            android:contentDescription="@string/chat"
-            android:layout_marginStart="32dp" />
-
+            android:layout_marginLeft="40dp"
+            android:contentDescription="@string/chat" />
         <ImageView
             android:id="@+id/favoriteIcon"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:src="@drawable/ic_favorite"
-            android:contentDescription="@string/favorite"
-            android:layout_marginStart="32dp" />
-
+            android:layout_marginLeft="40dp"
+            android:contentDescription="@string/favorite" />
         <ImageView
             android:id="@+id/profileIcon"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:src="@drawable/ic_contact"
-            android:contentDescription="@string/profile"
-            android:layout_marginStart="32dp" />
+            android:layout_marginLeft="40dp"
+            android:contentDescription="@string/profile" />
     </LinearLayout>
-</RelativeLayout>
+</LinearLayout>

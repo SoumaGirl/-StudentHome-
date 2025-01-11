@@ -26,8 +26,8 @@
         android:layout_gravity="center"
 
         android:layout_marginTop="30dp"
-        android:fontFamily="sans-serif-medium"
         android:text="@string/welcome_text"
+        android:fontFamily="@font/parkinsans_bold"
         android:textColor="@color/primaryColor"
         android:textSize="24sp"
         tools:ignore="HardcodedText,TextSizeCheck" />
@@ -38,6 +38,9 @@
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
         android:hint="@string/username_hint"
+        android:fontFamily="@font/parkinsans_regular"
+
+
         android:paddingStart="20dp"
         android:layout_marginStart="30dp"
         android:background="@drawable/edittext_background"
@@ -52,6 +55,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
         android:hint="password"
+        android:fontFamily="@font/parkinsans_regular"
         android:paddingStart="20dp"
         android:layout_marginStart="30dp"
         android:background="@drawable/edittext_background"
@@ -69,6 +73,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginStart="40dp"
         android:text="Sign Up"
+        android:fontFamily="@font/parkinsans_bold"
         android:textColor="#ffffff"
         android:backgroundTint="@color/buttonColor"
         android:textSize="16sp"

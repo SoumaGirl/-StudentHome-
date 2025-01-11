@@ -76,6 +76,7 @@
 
 
 
+
     <string name="name">Omar EL ALAMI</string>
     <string name="statut">Student</string>
 
@@ -87,6 +88,9 @@
     <string name="logout_button">Log Out</string>
     <string name="student">Student</string>
     <string name="sex">Sex</string>
+    <string name="Appartement">appartement\n</string>
+    <string name="Room">Room</string>
+    <string name="All">All\n</string>
 
 
 </resources>

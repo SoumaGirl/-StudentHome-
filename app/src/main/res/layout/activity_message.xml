@@ -9,6 +9,7 @@
 
     <!-- User Info at the Top with Gray Background -->
     <LinearLayout
+
         android:layout_width="275dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -16,7 +17,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginStart="30dp"
         android:background="@drawable/edittext_background1"
-        android:textColorHint="#546E7A" >
+        android:textColorHint="#A8D7ED" >
 
         <!-- Left Section: User Image and Name -->
         <LinearLayout
@@ -80,20 +81,7 @@
 
             android:gravity="center_vertical">
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="70dp"
-                android:src="@drawable/ic_call"
-                android:contentDescription="Call Icon" />
 
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/more_vert"
-                android:layout_marginStart="-20dp"
-                android:contentDescription="More Options" />
         </LinearLayout>
     </LinearLayout>
 

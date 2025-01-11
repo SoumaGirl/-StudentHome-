@@ -1,16 +1,15 @@
 package com.example.promobile;
 
-
-
 import android.content.Intent;
 import android.os.Bundle;
-
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 public class ProfileActivity extends AppCompatActivity {
 
@@ -19,12 +18,17 @@ public class ProfileActivity extends AppCompatActivity {
     private RadioButton maleButton, femaleButton;
     private Button editButton, logoutButton;
 
+    private FirebaseAuth mAuth; // Firebase Authentication instance
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile); // Remplacez par le nom exact de votre fichier XML
 
-        // Initialisation des vues
+        // Initialize Firebase Auth
+        mAuth = FirebaseAuth.getInstance();
+
+        // Initialize the views
         backButton = findViewById(R.id.back_button);
         profilePicture = findViewById(R.id.profile_picture);
         emailField = findViewById(R.id.email_field);
@@ -35,27 +39,35 @@ public class ProfileActivity extends AppCompatActivity {
         editButton = findViewById(R.id.edit_button);
         logoutButton = findViewById(R.id.logout_button);
 
-        // Gestion des clics
+        // Handling back button click
         backButton.setOnClickListener(v -> onBackPressed());
 
+        // Handling edit button click
         editButton.setOnClickListener(v -> {
-            // Récupérer les informations saisies
+            // Retrieve the entered information
             String email = emailField.getText().toString();
             String phone = phoneField.getText().toString();
             String dob = dobField.getText().toString();
             String gender = maleButton.isChecked() ? "Male" : "Female";
 
-            // Afficher les informations dans un Toast
+            // Display the information in a Toast
             Toast.makeText(this,
                     "Email: " + email + "\nPhone: " + phone + "\nDate of Birth: " + dob + "\nGender: " + gender,
                     Toast.LENGTH_LONG).show();
         });
 
+        // Handling logout button click
         logoutButton.setOnClickListener(v -> {
-            // Rediriger vers l'activité de connexion
-            Intent intent = new Intent(ProfileActivity.this,OfferDetailActivity.class); // Remplacez LoginActivity par votre activité de connexion
+            // Sign out the user from Firebase
+            mAuth.signOut();
+
+            // Display a Toast confirming logout
+            Toast.makeText(this, "You have been logged out", Toast.LENGTH_SHORT).show();
+
+            // Redirect to SignInActivity
+            Intent intent = new Intent(ProfileActivity.this, SignInActivity.class); // Navigate to SignInActivity
             startActivity(intent);
-            finish(); // Fermer l'activité actuelle
+            finish(); // Close the current activity (ProfileActivity)
         });
     }
 }

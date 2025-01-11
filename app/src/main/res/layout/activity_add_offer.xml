@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEBEB">
+
+    <!-- Header Section with Title 'Add Offer' -->
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#800000">
+
+        <TextView
+            android:id="@+id/headerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Offer"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <!-- Offer Type Label -->
+    <TextView
+        android:id="@+id/typeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Offer Type"
+        android:textColor="#800000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/headerLayout"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Offer Type EditText -->
+    <EditText
+        android:id="@+id/typeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/typeLabel"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/parkinsans_light"
+        android:hint="Enter offer type"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#800000" />
+
+    <!-- Offer Location Label -->
+    <TextView
+        android:id="@+id/locationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Offer Location"
+        android:textColor="#800000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/typeEditText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Offer Location EditText -->
+    <EditText
+        android:id="@+id/locationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locationLabel"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/parkinsans_light"
+        android:hint="Enter offer location"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#800000" />
+
+    <!-- Offer Title Label -->
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Offer Title"
+        android:textColor="#800000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/locationEditText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Offer Title EditText -->
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleLabel"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/parkinsans_light"
+        android:hint="Enter offer title"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#800000" />
+
+    <!-- Offer Price Label -->
+    <TextView
+        android:id="@+id/priceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Offer Price"
+        android:textColor="#800000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/titleEditText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Offer Price EditText -->
+    <EditText
+        android:id="@+id/priceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priceLabel"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/parkinsans_light"
+        android:hint="Enter offer price"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#800000" />
+
+    <!-- Offer Image Label -->
+    <TextView
+        android:id="@+id/imageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Offer Image"
+        android:textColor="#800000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/priceEditText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Frame for Image with Border -->
+    <FrameLayout
+        android:id="@+id/imageFrame"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/imageLabel"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border">
+
+        <!-- ImageView inside Frame -->
+        <ImageView
+            android:id="@+id/offerImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Offer Image"
+            android:src="@drawable/default_image"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Offer"
+        android:background="#800000"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/parkinsans_bold"
+        android:layout_marginBottom="15dp" />
+
+    <!-- Cancel Button -->
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:background="#800000"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/parkinsans_bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- ProgressBar for saving -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

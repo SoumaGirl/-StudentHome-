@@ -1,7 +1,5 @@
 package com.example.promobile;
 
-
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -34,35 +32,33 @@ public class OwnerOfferActivity extends AppCompatActivity {
         backButton.setOnClickListener(v -> finish());
 
         myOffersButton.setOnClickListener(v -> {
-            // Navigate to "My Offers" screen
-            Toast.makeText(OwnerOfferActivity.this, "My Offers clicked", Toast.LENGTH_SHORT).show();
-            // Add intent if another activity exists
+            navigateToActivity(OwnerOfferActivity.class, "My Offers clicked");
         });
 
         addOfferButton.setOnClickListener(v -> {
-            // Navigate to "Add Offer" screen
-            Toast.makeText(OwnerOfferActivity.this, "Add Offer clicked", Toast.LENGTH_SHORT).show();
-            // Add intent if another activity exists
+            navigateToActivity(AddOffer.class, "Add Offer clicked");
         });
 
         homeIcon.setOnClickListener(v -> {
-            // Navigate to Home
-            Toast.makeText(OwnerOfferActivity.this, "Home clicked", Toast.LENGTH_SHORT).show();
+            navigateToActivity(HomePage.class, "Home clicked");
         });
 
         chatIcon.setOnClickListener(v -> {
-            // Navigate to Chat
-            Toast.makeText(OwnerOfferActivity.this, "Chat clicked", Toast.LENGTH_SHORT).show();
+            navigateToActivity(MessageActivity.class, "Chat clicked");
         });
 
         favoriteIcon.setOnClickListener(v -> {
-            // Navigate to Favorites
-            Toast.makeText(OwnerOfferActivity.this, "Favorites clicked", Toast.LENGTH_SHORT).show();
+            navigateToActivity(FavoritesActivity.class, "Favorites clicked");
         });
 
         profileIcon.setOnClickListener(v -> {
-            // Navigate to Profile
-            Toast.makeText(OwnerOfferActivity.this, "Profile clicked", Toast.LENGTH_SHORT).show();
+            navigateToActivity(ProfileActivity.class, "Profile clicked");
         });
+    }
+
+    private void navigateToActivity(Class<?> activityClass, String toastMessage) {
+        Toast.makeText(OwnerOfferActivity.this, toastMessage, Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(OwnerOfferActivity.this, activityClass);
+        startActivity(intent);
     }
 }
